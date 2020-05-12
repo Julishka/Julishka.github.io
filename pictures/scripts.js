@@ -1,5 +1,5 @@
 let data_0 = {
-    photo: 'images/_MG_0651se.jpg',
+    photo: 'pictures/images/_MG_0651se.jpg',
     title: 'Eka Pada Sirsasana',
     description: 'This asana helps to increase the flexibility of legs. Stretches the hips, hamstrings and glutes. Regular and extended period of practice can be therapeutic for varicose veins.'
   };
