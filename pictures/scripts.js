@@ -1,49 +1,49 @@
-let data_0 = {
-    photo: 'https://github.com/Julishka/Julishka.github.io/tree/master/pictures/images/_MG_0651se.jpg',
-    title: 'Eka Pada Sirsasana',
-    description: 'This asana helps to increase the flexibility of legs. Stretches the hips, hamstrings and glutes. Regular and extended period of practice can be therapeutic for varicose veins.'
-  };
+let imagesData = [];
+    imagesData.push ({
+      photo: 'images/_MG_0651se.jpg',
+      title: 'Eka Pada Sirsasana',
+      description: 'This asana helps to increase the flexibility of legs. Stretches the hips, hamstrings and glutes. Regular and extended period of practice can be therapeutic for varicose veins.'
+    });
 
-let data_1 = {
-    photo: 'images/_MG_0750s.jpg',
-    title: 'Eka Pada Adho Mukha Svanasana',
-    description: 'This asana calms the mind, improves balance and confidence. Strengthens the shoulders and arms, opens the chest, hip flexors and hamstrings and stretches the quadriceps.'
-  };
+    imagesData.push ({
+      photo: 'images/_MG_0750s.jpg',
+      title: 'Eka Pada Adho Mukha Svanasana',
+      description: 'This asana calms the mind, improves balance and confidence. Strengthens the shoulders and arms, opens the chest, hip flexors and hamstrings and stretches the quadriceps.'
+    });
 
-let data_2 = {
-    photo: 'images/_MG_0784s.jpg',
-    title: 'Gomukhasana',
-    description: 'This asana strengthens spine, abdominal muscles and the hip joint. Stretches the hips, and relieves chronic knee pain.'
-  };
+    imagesData.push ({
+      photo: 'images/_MG_0784s.jpg',
+      title: 'Gomukhasana',
+      description: 'This asana strengthens spine, abdominal muscles and the hip joint. Stretches the hips, and relieves chronic knee pain.'
+    });
 
-let data_3 = {
-    photo: 'images/_MG_0869s.jpg',
-    title: 'Utthita Hasta Padangusthasana',
-    description: 'This asana strengthens and stretches the legs and ankles. It deeply stretches the hamstrings, while gently opening the hips, shoulders, and arms. Challenges and improves the sense of balance.'
-  };
+    imagesData.push ({
+      photo: 'images/_MG_0869s.jpg',
+      title: 'Utthita Hasta Padangusthasana',
+      description: 'This asana strengthens and stretches the legs and ankles. It deeply stretches the hamstrings, while gently opening the hips, shoulders, and arms. Challenges and improves the sense of balance.'
+    });
 
-let data_4 = {
-    photo: 'images/_MG_0900.jpg',
-    title: 'Matsyasana',
-    description: 'This asana stretches intercostal muscles, and stimulates the organs of the body. Strengthens the upper back, the back of the neck, and improves posture.'
-  };
+    imagesData.push ({
+      photo: 'images/_MG_0900.jpg',
+      title: 'Matsyasana',
+      description: 'This asana stretches intercostal muscles, and stimulates the organs of the body. Strengthens the upper back, the back of the neck, and improves posture.'
+    });
+    
+    imagesData.push ({
+      photo: 'images/_MG_0931.jpg',
+      title: 'Eka Pada Rajakapotasana',
+      description: 'This asana opens the hip joint, lengthens the hip flexor and stretches the thighs, gluteals and piriformis muscles. Improves posture, alignment, diminishes lower back pain and stiffness.'
+    });
 
-let data_5 = {
-    photo: 'images/_MG_0931.jpg',
-    title: 'Eka Pada Rajakapotasana',
-    description: 'This asana opens the hip joint, lengthens the hip flexor and stretches the thighs, gluteals and piriformis muscles. Improves posture, alignment, diminishes lower back pain and stiffness.'
-  };
-
-let data_6 = {
-    photo: 'images/_MG_1031s.jpg',
-    title: 'Ardha Urdhva Dhanurasana',
-    description: 'This asana stretches the chest and lungs. Strengthens the arms and wrists, legs, buttocks, abdomen and spine. Stimulates the thyroid and pituitary, increases energy and counteracts depression.'
-  };
+    imagesData.push ({
+      photo: 'images/_MG_1031s.jpg',
+      title: 'Ardha Urdhva Dhanurasana',
+      description: 'This asana stretches the chest and lungs. Strengthens the arms and wrists, legs, buttocks, abdomen and spine. Stimulates the thyroid and pituitary, increases energy and counteracts depression.'
+    });
 
 let currentPhoto = 0;
-let imagesData = [data_0, data_1, data_2, data_3, data_4, data_5, data_6];
 
-$('#photo').attr('src', imagesData[currentPhoto].photo);
+$('#photo').attr('imagesData-number', currentPhoto).attr('src', imagesData[currentPhoto].photo);
 $('#photo-title').text(imagesData[currentPhoto].title);
 $('#photo-description').text(imagesData[currentPhoto].description);
 
