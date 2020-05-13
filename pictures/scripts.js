@@ -43,7 +43,7 @@ let imagesData = [];
 
 let currentPhoto = 0;
 
-$('#photo').attr('imagesData-number', currentPhoto).attr('src', imagesData[currentPhoto].photo);
+$('#photo').attr('src', imagesData[currentPhoto].photo);
 $('#photo-title').text(imagesData[currentPhoto].title);
 $('#photo-description').text(imagesData[currentPhoto].description);
 
