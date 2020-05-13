@@ -6,37 +6,37 @@ let imagesData = [];
     });
 
     imagesData.push ({
-      photo: 'images/_MG_0750s.jpg',
+      photo: 'images/img02.jpg',
       title: 'Eka Pada Adho Mukha Svanasana',
       description: 'This asana calms the mind, improves balance and confidence. Strengthens the shoulders and arms, opens the chest, hip flexors and hamstrings and stretches the quadriceps.'
     });
 
     imagesData.push ({
-      photo: 'images/_MG_0784s.jpg',
+      photo: 'images/img03.jpg',
       title: 'Gomukhasana',
       description: 'This asana strengthens spine, abdominal muscles and the hip joint. Stretches the hips, and relieves chronic knee pain.'
     });
 
     imagesData.push ({
-      photo: 'images/_MG_0869s.jpg',
+      photo: 'images/img04.jpg',
       title: 'Utthita Hasta Padangusthasana',
       description: 'This asana strengthens and stretches the legs and ankles. It deeply stretches the hamstrings, while gently opening the hips, shoulders, and arms. Challenges and improves the sense of balance.'
     });
 
     imagesData.push ({
-      photo: 'images/_MG_0900.jpg',
+      photo: 'images/img05.jpg',
       title: 'Matsyasana',
       description: 'This asana stretches intercostal muscles, and stimulates the organs of the body. Strengthens the upper back, the back of the neck, and improves posture.'
     });
     
     imagesData.push ({
-      photo: 'images/_MG_0931.jpg',
+      photo: 'images/img06.jpg',
       title: 'Eka Pada Rajakapotasana',
       description: 'This asana opens the hip joint, lengthens the hip flexor and stretches the thighs, gluteals and piriformis muscles. Improves posture, alignment, diminishes lower back pain and stiffness.'
     });
 
     imagesData.push ({
-      photo: 'images/_MG_1031s.jpg',
+      photo: 'images/img07.jpg',
       title: 'Ardha Urdhva Dhanurasana',
       description: 'This asana stretches the chest and lungs. Strengthens the arms and wrists, legs, buttocks, abdomen and spine. Stimulates the thyroid and pituitary, increases energy and counteracts depression.'
     });
