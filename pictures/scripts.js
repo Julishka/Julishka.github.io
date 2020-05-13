@@ -41,12 +41,6 @@ let imagesData = [];
       description: 'This asana stretches the chest and lungs. Strengthens the arms and wrists, legs, buttocks, abdomen and spine. Stimulates the thyroid and pituitary, increases energy and counteracts depression.'
     });
 
-    imagesData.push ({
-      photo: 'images/img08.jpg',
-      title: 'Ardha Urdhva Dhanurasana',
-      description: 'This asana stretches the chest and lungs. Strengthens the arms and wrists, legs, buttocks, abdomen and spine. Stimulates the thyroid and pituitary, increases energy and counteracts depression.'
-    });
-
 let currentPhoto = 0;
 
 $('#photo').attr('src', imagesData[currentPhoto].photo);
