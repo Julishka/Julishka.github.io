@@ -79,10 +79,10 @@ function loadPhoto(photoNumber)  {
 
 
   imagesData.forEach((item, index) => {
-  $('#container').append(`<div class="box" id="thumb${index}"><div class="boxinbox"><img data-index="${index}"  src="${item.photo}" /></div><div class="asana">${item.title}</div></div>`);
+  $('#container').append(`<div class="box" id="thumb${index}"><div class="boxinbox"><img imagesData-index="${index}"  src="${item.photo}" /></div><div class="asana">${item.title}</div></div>`);
   $(`#thumb0`).addClass("active");
   $('.box img').click((event) => {
-    let indexClicked = $(event.target).attr('data-index');
+    let indexClicked = $(event.target).attr('imagesData-index');
     // indexClicked is now a string! if you need it as a number you have to change it
     // because for example "1" + 1 is going to be "11" and not 2
     let numberIndex = parseInt(indexClicked);
