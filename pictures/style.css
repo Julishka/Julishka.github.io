@@ -113,7 +113,7 @@ img {
     content: '';
     transform: rotate(45deg);
     background: white;
-    z-index: 0;
+    z-index: -1;
 }
 
 .asana {
