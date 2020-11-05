@@ -25,9 +25,12 @@ header {
    
 }
 
-li, :visited {
+li {
     display: inline;
-    margin-left: 25px;
+    margin-left: 25px;   
+}
+
+a, :visited {
     color: #ff0099;
     font-size: 18px;
     text-transform: uppercase;
