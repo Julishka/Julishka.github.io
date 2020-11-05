@@ -30,7 +30,7 @@ li {
     margin-left: 25px;   
 }
 
-a, :visited {
+a, :link, :visited {
     color: #ff0099;
     font-size: 18px;
     text-transform: uppercase;
