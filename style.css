@@ -1,131 +1,164 @@
-*, html {
-    margin:0;
-    padding:0;  
-    line-height: 150%;
-}
-
-header {
-  font-family: 'Abril Fatface', cursive;
-  color: #222;
-}
-
-img {
-  display: block;
-  margin: auto;
-  width: 940px;
-  position: relative;
-  border-top: 3px solid #222;
-}
-
-div {
-  margin: auto;
-  width: 625px;
-  padding-left: 70px;
-}
-
-h1 {
-  position: absolute;
-  top: 201px;
-  font-size: 54px;
-  font-weight: normal;
-}
-
-h2 {
-  position: absolute;
-  top: 177px;
-  font-size: 28px;
-  font-weight: normal;
-}
-
-h3 {
-  text-transform: uppercase;
-  font-size: 18px;
-  letter-spacing: 1px;
-  padding-bottom: 40px;
-}
-
-h4 {
-  font-weight: normal;
-  font-size: 18px;
-}
-
-h5 {
-  font-family: 'Merriweather', serif;
-  font-size: 12.5px;
-  
-}
-
-main {
-  margin: auto;
-  width: 625px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: lighter;
-  font-size: 11.5px;
-}
-
-footer {
-  margin: auto;
-  width: 620px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: lighter;
-  border-top: 3px solid #222;
-  font-size: 11.5px;
-}
-
-summary {
-  font-size: 15px
+html {
+    background-color: #ccc;
 }
 
 .main {
-  padding: 40px;
- 
+    width: 800px;
+    height: 440px;
+    background: white;
+    margin: 0 auto;
+    vertical-align: middle;  
+    overflow-y: hidden;
+    position: relative;
+    margin-top: 50px;
 }
 
-span {
-  font-weight: bold;
+.whiterc {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 7px 3px #aaa; /*box-shadow: [horizontal offset -left +right] [vertical offset -above +below] [blur radius 0sharp +blurred] [optional spread radius] [color];*/
+    
 }
 
-ul {
-  padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  list-style-type: square;
+.contents {
+    display: contents;
+    z-index: 0;
+
 }
 
-ul.b {
-  padding-bottom: 0px;
+#photo {
+    width: 660px;
 }
 
-ul.c {
-  padding-top: 0px;
-  padding-bottom: 0px;
+img {
+    filter: grayscale(100%); 
 }
 
-blockquote {
-  font-family: 'Abril Fatface', cursive;
-  font-size: 36px;
-  background: #444;
-  color: white;
-  padding: 40px;
-  box-sizing: border-box;
-  position: relative;
+.gray-container {
+    width: 660px;
+    height: 100px;
+    z-index: 10;
+    position: absolute;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.6); /*azért kell ez a filter:opacity helyett, hogy a szöveg ne legyen átlátszó*/
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-blockquote::before {
-  content: '\201C';
-  font-size: 120px;
-  color: white;
-  position: absolute;
-  top: -32px;
-  left: 0px;
-  line-height: normal;
+#photo-title{
+    padding: 10px 20px 0px 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: unset;
 }
 
-section.b {
-  padding-top: 20px;
-  padding-bottom: 40px;
+#photo-description {
+    padding: 10px 20px 20px 20px;
+    font-weight: lighter;
+    font-size: 15px;
+    margin: unset;
 }
 
-section.c {
-  padding-top: 20px;
+.arrow {
+    width: 25px;
+    filter: opacity(70%);
+    cursor: pointer;
 }
+
+.bw {
+    transform: rotate(0.5turn);
+}
+
+.arrow:hover {
+    filter: opacity(30%);
+}
+
+.boxinbox {
+    width: 70px;
+    height:70px;
+    border: white solid 2px;
+    overflow-x: hidden;
+    box-shadow: 0px 2px 5px 1px #aaa;
+    margin: 0;
+    position: relative;
+}
+
+.box {
+    box-align: center;
+    position: relative;
+}
+
+.box img {
+    display: block;
+    cursor: pointer;
+    margin: 0 -20%;
+    height: 100%;
+    z-index: 1;
+}
+
+.active img{
+    filter: brightness(35%) grayscale(100%);
+}
+
+.active:after {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    margin-left: -5px; /*because it is 10px wide, so it will be in the middle*/
+    margin-top: -77px;
+    content: '';
+    transform: rotate(45deg);
+    background: white;
+    z-index: -1;
+}
+
+.asana {
+    display: none;
+    position: absolute;
+    transform: translateX(-50%); /*ettol kerult vhogy a kozepe a bal szelre...*/
+    margin-left: 36px;
+    background: grey;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 1px;
+    padding: 3px;
+    top: 90px;
+    cursor: pointer;
+    width: max-content;
+  }
+
+  .asana:after {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -7px;
+    content: '';
+    transform: rotate(45deg);
+    background: grey;
+    z-index: -1;
+  }
+
+.box:hover .asana{
+    display: block;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 15px auto;
+    width: 706px;
+}
+
+/*#thumbnail {
+    width: 100px;
+}*/
